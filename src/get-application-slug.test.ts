@@ -1,8 +1,11 @@
 import assert from "node:assert/strict";
 import { test } from "node:test";
 
-// eslint-disable-next-line import-x/extensions -- Node native tester requires extension
-import { getApplicationSlug } from "./get-application-slug.ts";
+import {
+    getApplicationSelector,
+    getApplicationSlug,
+    // eslint-disable-next-line import-x/extensions -- Node native tester requires extension
+} from "./get-application-slug.ts";
 
 test("getApplicationSlug", async (t) => {
     await t.test("should replace scope delimiter with '--'", () => {
@@ -17,6 +20,19 @@ test("getApplicationSlug", async (t) => {
         "should support names with multiple subpaths (under scoped name)",
         () => {
             assert.equal(getApplicationSlug("@foo/bar/baz"), "foo--bar/baz");
+        },
+    );
+});
+
+test("getApplicationSelector", async (t) => {
+    await t.test("should prefix a scoped application slug with a dot", () => {
+        assert.equal(getApplicationSelector("@foo/bar"), ".foo--bar");
+    });
+
+    await t.test(
+        "should prefix an unscoped application name with a dot",
+        () => {
+            assert.equal(getApplicationSelector("foo-bar"), ".foo-bar");
         },
     );
 });
