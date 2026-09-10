@@ -14,4 +14,10 @@ export default [
 
     ...defaultConfig,
     typescriptConfig(),
+
+    {
+        name: "Node Native test runner requires file extensions",
+        files: ["**/*.ts"],
+        rules: { "import-x/extensions": "off" },
+    },
 ];
