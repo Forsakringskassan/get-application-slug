@@ -16,16 +16,17 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/get-application-slug.d.ts",
-      "default": "./dist/get-application-slug.js"
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
     }
   },
-  "types": "./dist/get-application-slug.d.ts",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "tsc",
+    "prebuild": "tsc",
+    "build": "node build.mjs",
     "eslint": "eslint --cache .",
     "eslint:fix": "eslint --fix .",
     "lint": "npm run eslint && npm run prettier:check",
@@ -52,6 +53,7 @@
     "@types/node": "22.20.1",
     "@typescript/native": "npm:typescript@7.0.2",
     "npm-pkg-lint": "5.2.5",
+    "tsdown": "0.23.0",
     "typescript": "npm:@typescript/typescript6@6.0.2"
   },
   "engines": {
