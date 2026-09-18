@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.2.0](https://github.com/Forsakringskassan/get-application-slug/compare/v1.1.0...v1.2.0) (2026-09-18)
+
+### Features
+
+* bundle & generate dts with tsdown ([32dec78](https://github.com/Forsakringskassan/get-application-slug/commit/32dec785b902b8c61e8bef745f7073b26e0a9b5a))
+
 ## [1.1.0](https://github.com/Forsakringskassan/get-application-slug/compare/v1.0.0...v1.1.0) (2026-09-08)
 
 ### Features
