@@ -1,5 +1,11 @@
 # CHANGELOG
 
+## [1.2.1](https://github.com/Forsakringskassan/get-application-slug/compare/v1.2.0...v1.2.1) (2026-09-25)
+
+### Bug Fixes
+
+* ext/npm-pkg-lint@main ([59c8f88](https://github.com/Forsakringskassan/get-application-slug/commit/59c8f88944566c0154c3b61303fc7d1c96fe8abe))
+
 ## [1.2.0](https://github.com/Forsakringskassan/get-application-slug/compare/v1.1.0...v1.2.0) (2026-09-18)
 
 ### Features
