@@ -37,6 +37,9 @@
     "pretest": "npm run lint",
     "test": "node --test"
   },
+  "allowScripts": {
+    "unrs-resolver": true
+  },
   "commitlint": {
     "extends": "@forsakringskassan/commitlint-config/no-jira"
   },
@@ -48,7 +51,7 @@
     "@forsakringskassan/commitlint-config": "4.2.8",
     "@forsakringskassan/eslint-config": "15.12.4",
     "@forsakringskassan/eslint-config-typescript": "15.12.0",
-    "@forsakringskassan/prettier-config": "3.7.12",
+    "@forsakringskassan/prettier-config": "3.7.13",
     "@tsconfig/node22": "22.0.6",
     "@types/node": "22.20.5",
     "@typescript/native": "npm:typescript@7.0.2",
@@ -59,8 +62,5 @@
   "engines": {
     "node": "^22.16 || >= 24",
     "npm": ">=11.0.0"
-  },
-  "allowScripts": {
-    "unrs-resolver": true
   }
 }
